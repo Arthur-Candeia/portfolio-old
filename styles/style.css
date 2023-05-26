@@ -13,7 +13,7 @@ body {
 }
 
 #animation-start-background {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   width: 0px;
@@ -29,13 +29,13 @@ body {
   top: 50%;
   left: 50%;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 36px;
   color: #4dff91;
   opacity: 0;
   transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 850px) {
   @keyframes growth {
     from {
       width: 0vw;
@@ -54,7 +54,7 @@ body {
       opacity: 1;
     }
   }
-  @keyframes toVanish {
+  @keyframes toVanishDiv {
     from {
       opacity: 1;
       width: 120vw;
@@ -66,16 +66,24 @@ body {
       height: 120vw;
     }
   }
+  @keyframes toVanishText {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 850px) {
   @keyframes growth {
     from {
       width: 0vh;
       height: 0vh;
     }
     to {
-      width: 200vh;
-      height: 200vh;
+      width: 190vh;
+      height: 190vh;
     }
   }
   @keyframes textToApear {
@@ -86,17 +94,28 @@ body {
       opacity: 1;
     }
   }
-  @keyframes toVanish {
+  @keyframes toVanishDiv {
     from {
       opacity: 1;
-      width: 200vh;
-      height: 200vh;
+      width: 190vh;
+      height: 190vh;
     }
     to {
       opacity: 0;
-      width: 200vh;
-      height: 200vh;
+      width: 190vh;
+      height: 190vh;
     }
+  }
+  @keyframes toVanishText {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  #animation-start-text {
+    font-size: 16px;
   }
 }
 
