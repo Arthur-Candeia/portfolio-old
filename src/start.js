@@ -1,20 +1,23 @@
 export async function load() {
   const startDiv = document.getElementById('animation-start-background');
   const startText = document.getElementById('animation-start-text');
-  const body = document.querySelector('body')
-
-  body.scroll = 'no'
+  const body = document.querySelector('body');
+  const main = document.querySelector('main')
+  
+  body.scroll = 'no';
+  main.style.display = 'none';
   startDiv.style.animation = 'growth 4s forwards ease';
-  setTimeout(() => {
+  setTimeout(() => { //Animação de aparição do texto
     startText.style.animation = 'textToApear 1s forwards ease';
   }, 1550)
 
-  setTimeout(() => {
+  setTimeout(() => {//Animação de desvanecer e carregamento da página
     startDiv.style.animation = 'toVanishDiv 1.5s forwards ease';
     startText.style.animation = 'toVanishText 1.5s forwards ease';
+    main.style.display = 'block';
   }, 4000)
 
-  setTimeout(() => {
+  setTimeout(() => { //Reativação scroll e exclusão dos elementos start
     startDiv.style.display = 'none';
     startText.style.display = 'none';
     body.style.overflow = 'auto';
