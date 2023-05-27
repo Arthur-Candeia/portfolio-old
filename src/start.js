@@ -5,7 +5,6 @@ export async function load() {
   const main = document.querySelector('main')
   
   body.scroll = 'no';
-  main.style.display = 'none';
   startDiv.style.animation = 'growth 4s forwards ease';
   setTimeout(() => { //Animação de aparição do texto
     startText.style.animation = 'textToApear 1s forwards ease';

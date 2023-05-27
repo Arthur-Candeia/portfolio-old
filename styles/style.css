@@ -16,6 +16,10 @@ body {
   padding: 10px;
 }
 
+main {
+  display: none;
+}
+
 #presentation {
   display: flex;
   flex-direction: column;
