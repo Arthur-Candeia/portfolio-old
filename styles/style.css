@@ -52,6 +52,8 @@ main #navbar .bi-house {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  overflow: hidden;
 }
 
 #presentation-title {
@@ -62,25 +64,57 @@ main #navbar .bi-house {
   padding: 15px;
 }
 
-#image-profile {
-  width: 150px;
+.flex-presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  min-width: 240px;
+  min-height: 300px;
+  padding-top: 40px;
+  background-color: black;
+  border: 1px solid #4dff91;
+  border-radius: 10px;
+}
+
+.circle {
+  position: relative;
+  background-color: #B0917C;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
-  border: 2px solid white;
   margin: 10px;
+  border: 2px solid white;
+  box-shadow: inset 4px 4px 15px rgba(0, 0, 0, 0.63);
+}
+.circle #image-profile {
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  width: 155px;
+  height: 160px;
+  padding: 0px 4px;
+  border-radius: 0 0 50% 50%;
+  transform: translate(-50%, 0);
 }
 
 #name {
-  font-size: 1em;
+  font-size: 3vh;
   font-family: "Open Sans";
   color: white;
-  z-index: 2;
+  background: #333 url("../images/gif-binarios.gif") center center no-repeat scroll;
+  background-size: cover;
+  padding: 10px;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
 }
-
-#binary-numbers {
-  margin-top: -25px;
-  width: 184px;
-  height: 30px;
-  z-index: 1;
+#name span {
+  font-size: 5vh;
+  font-family: "Open Sans";
+  color: #3DCC74;
+  text-shadow: 2px 2px 5px #04724D;
 }
 
 #presentation-content {
@@ -197,6 +231,19 @@ main #navbar .bi-house {
   }
   #animation-start-text {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 330px) {
+  #name {
+    font-size: 12px;
+    font-family: "Open Sans";
+    color: white;
+    padding: 10px;
+  }
+  #name span {
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: #3DCC74;
   }
 }
 

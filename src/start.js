@@ -5,6 +5,7 @@ export async function load() {
   const main = document.querySelector('main')
   
   body.scroll = 'no';
+  body.style.backgroundColor = '#ffffff'
   startDiv.style.animation = 'growth 4s forwards ease';
   setTimeout(() => { //Animação de aparição do texto
     startText.style.animation = 'textToApear 1s forwards ease';
@@ -13,6 +14,7 @@ export async function load() {
   setTimeout(() => {//Animação de desvanecer e carregamento da página
     startDiv.style.animation = 'toVanishDiv 1.5s forwards ease';
     startText.style.animation = 'toVanishText 1.5s forwards ease';
+    body.style.backgroundColor = '#111'
     main.style.display = 'block';
   }, 4000)
 
