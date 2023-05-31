@@ -92,7 +92,7 @@ main #navbar .bi-house {
 .circle #image-profile {
   position: absolute;
   left: 50%;
-  bottom: 5px;
+  bottom: 0px;
   width: 155px;
   height: 160px;
   padding: 0px 4px;
@@ -111,7 +111,7 @@ main #navbar .bi-house {
   border-radius: 0px 0px 10px 10px;
 }
 #name span {
-  font-size: 5vh;
+  font-size: 4.5vh;
   font-family: "Open Sans";
   color: #3DCC74;
   text-shadow: 2px 2px 5px #04724D;
@@ -244,6 +244,14 @@ main #navbar .bi-house {
     font-size: 16px;
     font-family: "Open Sans";
     color: #3DCC74;
+  }
+}
+@media screen and (min-height: 1200px) {
+  #name {
+    font-size: 40px;
+  }
+  #name span {
+    font-size: 56px;
   }
 }
 
