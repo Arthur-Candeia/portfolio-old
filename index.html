@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles/style.css">
   <script src="src/script.js" type="module" defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Animation-->
 </head>
 <body>
 
@@ -18,18 +19,18 @@
 
   <main>
     <div id="navbar">
-      <button class="bi bi-house"></button>
-      <button class="bi bi-person"></button>
-      <button class="bi bi-briefcase"></button>
-      <button class="bi bi-window-fullscreen"></button>
-      <button class="bi bi-send"></button>
+      <a class="bi bi-house" href="#presentation"></a>
+      <a class="bi bi-person"></a>
+      <a class="bi bi-briefcase"></a>
+      <a class="bi bi-window-fullscreen"></a>
+      <a class="bi bi-send"></a>
     </div>
 
     <section id="presentation">
       <h2 id="presentation-title">Apresentação</h2>
       <div class="flex-presentation">
         <div class="circle">
-          <img src="images/foto-perfil-transparente.png" alt="Foto de perfil" id="image-profile">
+          
         </div>
         <h1 id="name">Arthur Candeia Heher <br> <span>DESENVOLVEDOR <br> FULL-STACK JR</span></h1>
 
@@ -37,15 +38,35 @@
           <a href="https://www.linkedin.com/in/arthur-candeia-heher-56b836248/" target="_blank" rel="external" class="link-social linkedin">
             Linkedin
           </a>
+
           <a href="https://github.com/Arthur-Candeia" target="_blank" rel="external" class="link-social github">
             GitHub
           </a>
-          <button disabled class="link-social curriculum">Currículo</button>
+
+          <button disabled class="link-social curriculum" >Currículo</button>
         </aside>
       </div>
-      <p id="presentation-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque iusto accusantium laborum rem rerum maiores voluptatibus, sapiente mollitia in sequi ducimus ipsa minima praesentium, blanditiis ipsum fuga omnis! Dolore nostrum aliquam voluptatum labore deleniti eos sint asperiores quibusdam similique praesentium, voluptates doloribus non assumenda sit est id aperiam porro quas numquam omnis? Iste dolorum natus iure a in quis laudantium quo, doloremque quaerat laboriosam sint laborum ipsam voluptate, animi error atque corrupti nobis non corporis? Quasi modi pariatur voluptates porro velit vitae vel odit amet, suscipit soluta possimus a provident ipsam atque architecto voluptatibus cum autem, quam iure praesentium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt delectus corrupti aut sunt omnis eligendi ab odio esse. Dolores amet excepturi, doloribus deserunt molestias sit officia blanditiis facilis at ad aliquid tenetur sint ipsam obcaecati quaerat. Sint, incidunt! Aperiam maiores quia quisquam veniam aliquid corporis a, libero dolore, deserunt sapiente culpa inventore sed molestias, adipisci ducimus quod in! Animi minus voluptatum odio quasi dolorum hic magnam nobis aperiam quae quisquam accusantium accusamus ipsum molestiae omnis ea saepe voluptatem ipsam, dignissimos autem quos architecto maiores ut nisi. Non ad error aspernatur nisi. Totam perferendis esse neque perspiciatis blanditiis facere odio error.</p>
+
+      <aside id="presentation-content">
+        <h3>Sobre mim</h3>
+        <ul>
+          <li>Desenvolvedor de aplicações web (SPA), API's, interfaces e sites</li>
+          <li>Cursando Ciência da Computação - UFES</li>
+          <li>Interesse em desenvolvimento Full-Stack</li>
+          <li>Buscando uma oportunidade para atuar como desenvolvedor</li>
+        </ul>
+
+        <p>Sou formado em Biotecnologia pelo Instituto Federal do Espirito Santo! Durante o ano de 2022, desenvolvi minhas habilidades de lógica de programação e resolução de problemas estudando C++. Em agosto, comecei meus estudos de HTML5 e CSS3, realizando um curso de 160h (concluído em fevereiro de 2023). Após concluí-lo, inicei um curso de Programação Full-Stack com foco em JavaScript que conclui em Junho de 2023. Agora, busco uma vaga para colocar em prática tudo que aprendi o fazer o que amo: PROGRAMAR!</p> 
+      </aside>
     </section>
   </main>
   
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> <!--Animation-->
 </body>
 </html>

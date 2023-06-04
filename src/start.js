@@ -25,4 +25,3 @@ export async function load() {
     body.scroll = 'yes'
   }, 5500)
 }
-
