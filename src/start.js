@@ -15,7 +15,7 @@ export async function load() {
     startDiv.style.animation = 'toVanishDiv 1.5s forwards ease';
     startText.style.animation = 'toVanishText 1.5s forwards ease';
     body.style.backgroundColor = '#111'
-    main.style.display = 'block';
+    main.style.visibility = 'visible';
   }, 4000)
 
   setTimeout(() => { //Reativação scroll e exclusão dos elementos start

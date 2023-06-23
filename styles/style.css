@@ -18,7 +18,7 @@ body {
 }
 
 main {
-  display: none;
+  visibility: hidden;
   padding-bottom: 100px;
 }
 main #navbar {
@@ -154,8 +154,13 @@ main #navbar a {
   transition: all 0.3s ease-out;
 }
 .presentation-buttons .curriculum {
-  cursor: not-allowed;
+  cursor: pointer;
   background-color: black;
+}
+.presentation-buttons .curriculum:hover {
+  background-color: #04724D;
+  color: white;
+  transition: all 0.1s ease-out;
 }
 
 #presentation-content {
@@ -198,7 +203,7 @@ main #navbar a {
   margin-bottom: 20px;
 }
 
-#presentation {
+#who-am {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,13 +211,31 @@ main #navbar a {
   width: 100%;
   overflow: hidden;
 }
-
-#who-am-title {
+#who-am #who-am-title {
   font-size: 1.5em;
   font-family: "Open Sans";
   color: #4dff91;
   align-self: start;
   padding: 15px;
+}
+#who-am .info {
+  width: 90vw;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  border: 2px solid #4dff91;
+  border-radius: 10px;
+}
+#who-am .info:hover {
+  transform: scale(1.05);
+}
+#who-am .info h3 {
+  margin-bottom: 10px;
+  color: #3DCC74;
+}
+#who-am .info p {
+  word-wrap: break-word;
+  text-align: justify;
+  color: white;
 }
 
 #animation-start-background {
