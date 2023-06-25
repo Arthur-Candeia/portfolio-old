@@ -25,4 +25,3 @@ navbarButtons.forEach((element) => {
 })
 
 window.addEventListener('scroll', viewScroll)
-
