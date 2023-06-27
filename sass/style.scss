@@ -15,13 +15,13 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: $body-backgroundColor;
   padding: 10px;
 }
 
 main {
-  visibility: hidden;
+  //visibility: hidden;
   padding-bottom: 100px;
 
   #navbar {
@@ -72,5 +72,6 @@ a {
 @import './sections/who-am.scss';
 @import './sections/hard-skills.scss';
 @import './sections/projects.scss';
+@import './sections/contact.scss';
 @import './common/start.scss';
 @import './common/media-queries.scss';

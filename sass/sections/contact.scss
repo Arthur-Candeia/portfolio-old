@@ -1,0 +1,14 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+#contact-title {
+  @include font-style(1.5em, 'Open Sans', $green1);
+  align-self: start;
+  padding: 15px;
+}

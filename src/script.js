@@ -1,5 +1,5 @@
 import { load } from "./start.js";
-load()
+//load()
 
 let ft = 2
 const navbarButtons = document.querySelectorAll('#navbar > a')
