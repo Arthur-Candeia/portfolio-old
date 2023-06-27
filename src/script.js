@@ -1,6 +1,7 @@
 import { load } from "./start.js";
 load()
 
+let ft = 2
 const navbarButtons = document.querySelectorAll('#navbar > a')
 document.querySelector('.bi:nth-child(1)').style.color = 'white'
 
@@ -25,3 +26,16 @@ navbarButtons.forEach((element) => {
 })
 
 window.addEventListener('scroll', viewScroll)
+
+
+setInterval(() => {
+  const imgs = document.querySelectorAll('.project > img')
+
+  imgs.forEach((element) => {
+    const currentPath = element.getAttribute('src').slice(0, 36)
+    element.setAttribute('src', `${currentPath}${ft}.png`)
+  })
+  
+  ft++
+  ft > 4 ? ft = 1 : ft;
+}, 3500)

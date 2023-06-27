@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import './common/coolors.scss';
+@import './common/generators.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans' ,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: $body-backgroundColor;
+  padding: 10px;
+}
+
+main {
+  visibility: hidden;
+  padding-bottom: 100px;
+
+  #navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    width: 280px;
+    height: 34px;
+    z-index: 1;
+    background-color: $green4;
+    border-radius: 20px;
+    transform: translate(-50%, 0);
+
+    a {
+      @include font-style(1em, 'Open Sans', $green1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      background-color: transparent;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.329);
+      border-radius: 50%;
+    }
+  }
+}
+
+p {
+  color: white;
+}
+
+li {
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+@import './sections/presentation.scss';
+@import './sections/who-am.scss';
+@import './sections/hard-skills.scss';
+@import './sections/projects.scss';
+@import './common/start.scss';
+@import './common/media-queries.scss';

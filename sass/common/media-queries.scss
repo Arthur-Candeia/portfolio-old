@@ -1,0 +1,27 @@
+@media screen and (max-width: 330px) {
+  #name {
+    @include font-style(12px, 'Open Sans', white);
+    padding: 10px;
+    span {
+      @include font-style(16px, 'Open Sans', $green3);
+    }
+  }
+
+  #hard-skills-cards {
+    .hard-skills-card {
+      span {
+        text-align: left;
+        padding: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (min-height: 1200px) {
+  #name {
+    font-size: 30px;
+    span {
+      font-size: 52px;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+#animation-start-background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 0px;
+  height: 0px;
+  background-color: $black;
+  border-radius: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+#animation-start-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  color: $green1;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 850px) {
+  @keyframes growth {
+    from {
+      width: 0vw;
+      height: 0vw;
+    }
+    to {
+      width: 120vw;
+      height: 120vw;
+    }
+  }
+  
+  @keyframes textToApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes toVanishDiv {
+    from {
+      opacity: 1;
+      width: 120vw;
+      height: 120vw;
+    }
+    to {
+      opacity: 0;
+      width: 120vw;
+      height: 120vw;
+    }
+  }
+
+  @keyframes toVanishText {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  @keyframes growth {
+    from {
+      width: 0vh;
+      height: 0vh;
+    }
+    to {
+      width: 190vh;
+      height: 190vh;
+    }
+  }
+  
+  @keyframes textToApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes toVanishDiv {
+    from {
+      opacity: 1;
+      width: 190vh;
+      height: 190vh;
+    }
+    to {
+      opacity: 0;
+      width: 190vh;
+      height: 190vh;
+    }
+  }
+
+  @keyframes toVanishText {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  #animation-start-text {
+    font-size: 16px;
+  }
+}

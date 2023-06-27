@@ -53,6 +53,18 @@ main #navbar a {
   border-radius: 50%;
 }
 
+p {
+  color: white;
+}
+
+li {
+  color: white;
+}
+
+a {
+  color: white;
+}
+
 #presentation {
   display: flex;
   flex-direction: column;
@@ -156,6 +168,7 @@ main #navbar a {
 }
 .presentation-buttons .curriculum {
   cursor: pointer;
+  color: #3DCC74;
   background-color: black;
 }
 .presentation-buttons .curriculum:hover {
@@ -167,7 +180,6 @@ main #navbar a {
 #presentation-content {
   font-size: 0.9em;
   font-family: "Open Sans";
-  color: white;
   padding: 15px;
   text-align: justify;
 }
@@ -236,7 +248,6 @@ main #navbar a {
 #who-am .info p {
   word-wrap: break-word;
   text-align: justify;
-  color: white;
 }
 
 #hard-skills {
@@ -292,7 +303,6 @@ main #navbar a {
 #hard-skills-cards .hard-skills-card p {
   font-size: 1em;
   font-family: "Open Sans";
-  color: white;
   transition: all 0.3s ease-in;
 }
 #hard-skills-cards .hard-skills-card span {
@@ -319,6 +329,95 @@ main #navbar a {
   align-self: flex-start;
   padding: 15px;
   color: #3DCC74;
+}
+#hard-skills-certificates p {
+  font-size: 1em;
+  font-family: "Open Sans";
+  padding: 0px 15px;
+}
+#hard-skills-certificates img {
+  display: block;
+  width: 82vw;
+  margin: 20px auto;
+  border: 2px solid #04724D;
+  border-radius: 5px;
+}
+#hard-skills-certificates img:hover {
+  animation: zoom 0.5s forwards ease-in;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+#projects-title {
+  font-size: 1.5em;
+  font-family: "Open Sans";
+  color: #4dff91;
+  align-self: start;
+  padding: 15px;
+}
+
+.project {
+  width: 90vw;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid #4dff91;
+  border-radius: 10px;
+}
+.project h3 {
+  margin-bottom: 10px;
+  color: #3DCC74;
+}
+.project img {
+  display: block;
+  width: 100%;
+  margin: 5px auto;
+  border-radius: 6px;
+}
+.project .project-info {
+  font-size: 0.7em;
+  font-family: "Open Sans";
+  text-align: justify;
+  line-height: 2;
+}
+.project .project-staks {
+  margin-bottom: 5px;
+}
+.project .project-button {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 8px 10px;
+  border: 1px solid white;
+}
+.project .acess:hover {
+  background-color: #4dff91;
+  transition: all 0.2s ease;
+}
+.project .repository:hover {
+  color: black;
+  background-color: white;
+  transition: all 0.2s ease;
 }
 
 #animation-start-background {
