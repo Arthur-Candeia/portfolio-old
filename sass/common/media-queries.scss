@@ -1,4 +1,12 @@
 @media screen and (max-width: 330px) {
+
+  #switchThemeBtn {
+    top: 30px;
+    right: 10px;
+    font-size: 0.6em;
+    padding: 6px 8px;
+  }
+
   #name {
     @include font-style(12px, 'Open Sans', white);
     padding: 10px;

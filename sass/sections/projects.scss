@@ -64,3 +64,19 @@
     transition: all 0.2s ease;
   }
 }
+
+#repository-dark {
+  &:hover {
+    color: black;
+    background-color: white;
+    transition: all 0.2s ease;
+  }
+}
+
+#repository-light {
+  &:hover {
+    color: white;
+    background-color: black;
+    transition: all 0.2s ease;
+  }
+}

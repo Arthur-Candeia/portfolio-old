@@ -1,7 +1,13 @@
 import { load } from "./start.js";
-//load()
+import { formSendEmail } from "./sendEmail.js";
+import { switchThemeFunction } from "./switchTheme.js";
+
+window.history.pushState("", "", "/");
+load();
 
 let ft = 2
+const form = document.querySelector('form')
+const switchThemeBtn = document.getElementById('switchThemeBtn')
 const navbarButtons = document.querySelectorAll('#navbar > a')
 document.querySelector('.bi:nth-child(1)').style.color = 'white'
 
@@ -10,21 +16,30 @@ const viewScroll = () => {
   const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
   const scroll = (totalScroll / windowHeight) * 100
 
-
-  if (scroll < 65) {
+  if (scroll < 10) {
     for(let i=1; i<=5; i++) {document.querySelector(`.bi:nth-child(${i})`).style.color = '#4dff91'}
     document.querySelector('.bi:nth-child(1)').style.color = 'white'
   }
-  else if (scroll <= 100) {
+  else if (scroll <= 30) {
     for(let i=1; i<=5; i++) {document.querySelector(`.bi:nth-child(${i})`).style.color = '#4dff91'}
     document.querySelector('.bi:nth-child(2)').style.color = 'white'
   }
+  else if (scroll <= 58) {
+    for(let i=1; i<=5; i++) {document.querySelector(`.bi:nth-child(${i})`).style.color = '#4dff91'}
+    document.querySelector('.bi:nth-child(3)').style.color = 'white'
+  }
+  else if (scroll <= 98) {
+    for(let i=1; i<=5; i++) {document.querySelector(`.bi:nth-child(${i})`).style.color = '#4dff91'}
+    document.querySelector('.bi:nth-child(4)').style.color = 'white'
+  }
+  else {
+    for(let i=1; i<=5; i++) {document.querySelector(`.bi:nth-child(${i})`).style.color = '#4dff91'}
+    document.querySelector('.bi:nth-child(5)').style.color = 'white'
+  }
 }
-
 navbarButtons.forEach((element) => {
   element.addEventListener('click', viewScroll)
 })
-
 window.addEventListener('scroll', viewScroll)
 
 
@@ -39,3 +54,10 @@ setInterval(() => {
   ft++
   ft > 4 ? ft = 1 : ft;
 }, 3500)
+
+form.addEventListener('submit', (ev) => {
+  ev.preventDefault()
+  formSendEmail()
+})
+
+switchThemeBtn.addEventListener('click', switchThemeFunction)

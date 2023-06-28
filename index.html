@@ -10,6 +10,14 @@
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Animation-->
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script> <!--Form Send-->
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("5UFSVyXB0fOhuYLeQ");
+    })();
+  </script> <!--Form Send-->
   <script src="src/script.js" type="module" defer></script>
 </head>
 <body>
@@ -21,10 +29,11 @@
     <div id="navbar">
       <a class="bi bi-house" href="#presentation"></a>
       <a class="bi bi-person" href="#who-am"></a>
-      <a class="bi bi-briefcase"></a>
-      <a class="bi bi-window-fullscreen"></a>
-      <a class="bi bi-send"></a>
+      <a class="bi bi-briefcase" href="#hard-skills"></a>
+      <a class="bi bi-window-fullscreen" href="#projects"></a>
+      <a class="bi bi-send" href="#contact"></a>
     </div>
+    <button id="switchThemeBtn">Switch Theme | 🌙</button>
 
     <section id="presentation">
       <h2 id="presentation-title">Apresentação</h2>
@@ -253,8 +262,18 @@
 
     <section id="contact">
       <h2 id="contact-title">Contate-me</h2>
+      <form autocomplete="on" method="POST">
+        <input type="text" name="inputName" id="inputName" placeholder="Qual o seu nome?" required minlength="4">
+        <input type="email" name="email" id="email" placeholder="example@example.com" required minlength="8">
+        <textarea name="message" id="message" cols="30" rows="7" placeholder="Digite aqui sua mensagem!" required minlength="4"></textarea>
+        <input type="submit" value="ENVIAR">
+      </form>
     </section>
   </main>
+
+  <footer>
+    <p>Desenvolvido por Arthur Candeia<br>Todos os direitos de criação reservados © 2023</p>
+  </footer>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

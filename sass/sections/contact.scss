@@ -12,3 +12,56 @@
   align-self: start;
   padding: 15px;
 }
+
+form {
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  width: 90vw;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid $green1;
+  border-radius: 10px;
+
+  #inputName, #email, #message {
+    display: inline-block;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid $body-backgroundColor;
+    outline: 2px solid transparent;
+    border-radius: 5px;
+
+    &:focus {
+      border-color: transparent;
+      outline: 2px solid $green1;
+      transition: all 0.3s ease;
+    }
+  }
+
+  input[type="submit"] {
+    display: inline-block;
+    width: 60%;
+    font-weight: bold;
+    padding: 8px 15px;
+    background-color: white;
+    border: 1px solid $body-backgroundColor;
+    outline: 2px solid transparent;
+    border-radius: 5px;
+
+    &:hover {
+      border-color: transparent;
+      outline: 2px solid $green1;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+input[type="submit"].sucess-send{
+  outline: 2px solid $green3;
+  background-color: $green1;
+}
+
+input[type="submit"].err-send{
+  outline: 2px solid white;
+  background-color: #ff0043;
+}

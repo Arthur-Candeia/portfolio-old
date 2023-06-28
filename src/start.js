@@ -2,7 +2,7 @@ export async function load() {
   const startDiv = document.getElementById('animation-start-background');
   const startText = document.getElementById('animation-start-text');
   const body = document.querySelector('body');
-  const main = document.querySelector('main')
+  const main = document.querySelector('main');
   
   body.scroll = 'no';
   body.style.backgroundColor = '#ffffff'
