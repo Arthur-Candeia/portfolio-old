@@ -1,4 +1,4 @@
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 350px) {
 
   #switchThemeBtn {
     top: 30px;
@@ -31,5 +31,92 @@
     span {
       font-size: 52px;
     }
+  }
+}
+
+@media screen and (min-width: 800px) { //versao desktop
+  body {
+    background-color: #111;
+  }
+
+  #name {
+    @include font-style(26px, 'Open Sans', white);
+
+    span {
+      @include font-style(50px, 'Open Sans', $green3);
+    }
+  }
+
+  #presentation-content {
+    align-self: start;
+    padding: 15px 25px;
+  }
+
+  #who-am {
+    aside {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .info {
+      width: 47vw;
+      margin-right: 7.5px;
+      margin-left: 7.5px;
+  
+      &:hover {
+        transform: scale(1.03);
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+
+  #hard-skills-cards {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+
+    .hard-skills-card {
+      span {
+        @include font-style(0.8vw, 'Open Sans', white);
+      }
+    }
+  }
+
+  #hard-skills-certificates {
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    img {
+      width: 40vw;
+      margin: 20px;
+    }
+  }
+
+  #projects {
+    aside {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0px 15px;
+    }
+  }
+
+  .project {
+    width: 42vw;
+
+    img {
+      height: 21vw;
+    }
+  }
+
+  form {
+    width: 50vw;
   }
 }

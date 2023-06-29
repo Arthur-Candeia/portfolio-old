@@ -18,7 +18,7 @@ export function switchThemeFunction() {
       element.style.color = 'black'
     })
 
-    const projectsLinks = document.querySelectorAll('#projects > .project > .project-button')
+    const projectsLinks = document.querySelectorAll('#projects > aside > .project > .project-button')
     projectsLinks.forEach((element) => {
       element.style.borderColor = 'black'
     })
@@ -46,7 +46,7 @@ export function switchThemeFunction() {
       element.style.color = 'white'
     })
 
-    const projectsLinks = document.querySelectorAll('#projects > .project > .project-button')
+    const projectsLinks = document.querySelectorAll('#projects > aside > .project > .project-button')
     projectsLinks.forEach((element) => {
       element.style.borderColor = 'white'
     })

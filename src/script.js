@@ -20,7 +20,7 @@ const viewScroll = () => {
     for(let i=1; i<=5; i++) {document.querySelector(`.bi:nth-child(${i})`).style.color = '#4dff91'}
     document.querySelector('.bi:nth-child(1)').style.color = 'white'
   }
-  else if (scroll <= 30) {
+  else if (scroll <= 27) {
     for(let i=1; i<=5; i++) {document.querySelector(`.bi:nth-child(${i})`).style.color = '#4dff91'}
     document.querySelector('.bi:nth-child(2)').style.color = 'white'
   }
@@ -61,3 +61,4 @@ form.addEventListener('submit', (ev) => {
 })
 
 switchThemeBtn.addEventListener('click', switchThemeFunction)
+viewScroll()
