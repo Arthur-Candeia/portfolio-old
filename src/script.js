@@ -12,7 +12,7 @@ const navbarButtons = document.querySelectorAll('#navbar > a')
 document.querySelector('.bi:nth-child(1)').style.color = 'white'
 
 const viewScroll = () => {
-  const totalScroll = document.body.scrollTop || document.documentElement.scrollTop
+  const totalScroll = document.documentElement.scrollTop || document.body.scrollTop
   const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
   const scroll = (totalScroll / windowHeight) * 100
 
@@ -20,15 +20,15 @@ const viewScroll = () => {
     for(let i=1; i<=5; i++) {document.querySelector(`.bi:nth-child(${i})`).style.color = '#4dff91'}
     document.querySelector('.bi:nth-child(1)').style.color = 'white'
   }
-  else if (scroll <= 27) {
+  else if (scroll <= 23) {
     for(let i=1; i<=5; i++) {document.querySelector(`.bi:nth-child(${i})`).style.color = '#4dff91'}
     document.querySelector('.bi:nth-child(2)').style.color = 'white'
   }
-  else if (scroll <= 58) {
+  else if (scroll <= 55) {
     for(let i=1; i<=5; i++) {document.querySelector(`.bi:nth-child(${i})`).style.color = '#4dff91'}
     document.querySelector('.bi:nth-child(3)').style.color = 'white'
   }
-  else if (scroll <= 98) {
+  else if (scroll <= 94) {
     for(let i=1; i<=5; i++) {document.querySelector(`.bi:nth-child(${i})`).style.color = '#4dff91'}
     document.querySelector('.bi:nth-child(4)').style.color = 'white'
   }
@@ -41,7 +41,7 @@ navbarButtons.forEach((element) => {
   element.addEventListener('click', viewScroll)
 })
 window.addEventListener('scroll', viewScroll)
-
+window.addEventListener('resize', () => viewScroll)
 
 setInterval(() => {
   const imgs = document.querySelectorAll('.project > img')
