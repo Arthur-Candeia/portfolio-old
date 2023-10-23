@@ -5,6 +5,7 @@
   align-items: center;
   width: 100%;
   overflow: hidden;
+  padding-bottom: 20px;
 
   #who-am-title {
     @include font-style(1.5em, 'Open Sans', $green1);
@@ -17,7 +18,7 @@
     margin-bottom: 15px;
     padding: 10px 20px;
     border: 2px solid $green1;
-    border-radius: 10px;
+    border-radius: 5px;
 
     &:hover {
       transform: scale(1.05);
@@ -31,7 +32,12 @@
     p {
       word-wrap: break-word;
       text-align: justify;
+      line-height: 1.7;
+      font-weight: 500;
+
+      span {
+        color: $green3;
+      }
     }
   }
-
 }

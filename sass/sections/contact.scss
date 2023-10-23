@@ -5,6 +5,9 @@
   align-items: center;
   width: 100%;
   overflow: hidden;
+  background: black url('../images/backgrounds/background1dark.jpg') center center no-repeat fixed;
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
 }
 
 #contact-title {

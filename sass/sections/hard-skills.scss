@@ -5,6 +5,9 @@
   align-items: center;
   width: 100%;
   overflow: hidden;
+  background: black url('../images/backgrounds/background1dark.jpg') center center no-repeat fixed;
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
 }
 
 #hard-skills-title {
@@ -58,7 +61,7 @@
     }
 
     span {
-      @include font-style(0.6em, 'Open Sans', white);
+      @include font-style(0.9em, 'Open Sans', white);
       position: absolute;
       display: grid;
       place-items: center;
@@ -77,6 +80,8 @@
 
 #hard-skills-certificates {
   width: 90vw;
+  height: calc(auto + 20px);
+  border-radius: 25px;
 
   h3 {
     align-self: flex-start;
@@ -93,26 +98,6 @@
     display: block;
     width: 82vw;
     margin: 20px auto;
-    border: 2px solid $green2;
     border-radius: 5px;
-
-    &:hover {
-      animation: zoom .4s forwards ease-in;
-    }
-  }
-}
-
-@keyframes zoom {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(0.95);
-  }
-  75% {
-    transform: scale(1.09);
-  }
-  100% {
-    transform: scale(1.05);
   }
 }

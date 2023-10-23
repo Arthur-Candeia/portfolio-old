@@ -5,7 +5,13 @@ export function switchThemeFunction() {
     switchThemeBtn.innerText = 'Switch Theme | ☀️'
     switchThemeBtn.style.borderColor = 'black'
     switchThemeBtn.style.color = 'black'
-    document.querySelector('body').style.backgroundColor = 'white'
+    document.querySelector('body').style.backgroundColor = '#eeeeeec9'
+
+    document.querySelector('#presentation').style.background = "black url('../images/backgrounds/background1light.jpg') center center no-repeat fixed"
+    document.querySelector('#hard-skills').style.background = "black url('../images/backgrounds/background1light.jpg') center center no-repeat fixed"
+    document.querySelector('#contact').style.background = "black url('../images/backgrounds/background1light.jpg') center center no-repeat fixed"
+    document.querySelector('#name').style.color = '#000'
+    document.querySelectorAll('#presentation-info > .presentation-buttons > .link-social > svg').forEach((element) => element.parentElement.classList.add('link-social-white-theme'))
 
     const elements = document.querySelectorAll('p,li,a')
     elements.forEach((element) => {
@@ -33,7 +39,13 @@ export function switchThemeFunction() {
     switchThemeBtn.innerText = 'Switch Theme | 🌙'
     switchThemeBtn.style.borderColor = 'white'
     switchThemeBtn.style.color = 'white'
-    document.querySelector('body').style.backgroundColor = '#111'
+    document.querySelector('body').style.backgroundColor = '#000'
+
+    document.querySelector('#presentation').style.background = ''
+    document.querySelector('#hard-skills').style.background = ''
+    document.querySelector('#contact').style.background = ''
+    document.querySelector('#name').style.color = ''
+    document.querySelectorAll('#presentation-info > .presentation-buttons > .link-social > svg').forEach((element) => element.parentElement.classList.remove('link-social-white-theme'))
 
     const elements = document.querySelectorAll('p,li,a')
     elements.forEach((element) => {

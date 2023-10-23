@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Animation-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> <!--Slider-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> <!--Slider-->
   <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
   </script> <!--Form Send-->
@@ -26,6 +28,10 @@
   <span id="animation-start-text">Seja bem-vindo ao meu Portfólio!</span>
 
   <main>
+    <a href="https://api.whatsapp.com/send?phone=5527998642163" target="_blank" rel="external" id="wpp">
+      <img src="./images/wpp.webp" alt="WhatsApp">
+    </a>
+
     <div id="navbar">
       <a class="bi bi-house" href="#presentation"></a>
       <a class="bi bi-person" href="#who-am"></a>
@@ -36,182 +42,215 @@
     <button id="switchThemeBtn">Switch Theme | 🌙</button>
 
     <section id="presentation">
-      <h2 id="presentation-title">Apresentação</h2>
       <div class="flex-presentation">
-        <div class="circle">
-          
+        <div id="presentation-info">
+          <h1 id="name"><span>DESENVOLVEDOR <br> FULL-STACK</span> <br>Arthur Candeia Heher</h1>
+          <aside class="presentation-buttons">
+            <a href="https://www.linkedin.com/in/arthur-candeia-heher-56b836248/" target="_blank" rel="external" class="link-social linkedin">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+                <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path>
+              </svg>
+            </a>
+            <a href="https://github.com/Arthur-Candeia" target="_blank" rel="external" class="link-social github">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+                <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
+              </svg>
+            </a>
+          </aside>
+          <h3>Soluções digitais para você</h3>
         </div>
-        <h1 id="name">Arthur Candeia Heher <br> <span>DESENVOLVEDOR <br> FULL-STACK</span></h1>
 
-        <aside class="presentation-buttons">
-          <a href="https://www.linkedin.com/in/arthur-candeia-heher-56b836248/" target="_blank" rel="external" class="link-social linkedin">
-            Linkedin
-          </a>
-
-          <a href="https://github.com/Arthur-Candeia" target="_blank" rel="external" class="link-social github">
-            GitHub
-          </a>
-
-          <a href="./documents/arthur-candeia-curriculo-contratacao.pdf" download="arthur-candeia-curriculo-contratacao.pdf" class="link-social curriculum" >Currículo</a>
-        </aside>
+        <div class="circle"></div>
       </div>
 
       <aside id="presentation-content">
-        <h3>Sobre mim</h3>
         <ul>
-          <li>Desenvolvedor de aplicações web (SPA), API's, interfaces, sistemas, E-commerce's e sites</li>
-          <li>Cursando Ciência da Computação - UFES</li>
-          <li>Interesse em desenvolvimento Full-Stack</li>
-          <li>Desenvolvimento que soluciona suas demandas digitais</li>
+          <li>
+            <div><img src="./images/svgs/computer.svg" alt="Computer svg"></div>
+            <p><span>Serviços</span> <br>Desenvolvedor de aplicações web (SPA), API's, interfaces, sistemas, E-commerce's e sites.</p>
+          </li>
+          <li>
+            <div><img src="./images/svgs/frontend.svg" alt="Frontend svg"></div>
+            <p><span>Front-end</span> <br>REACT / SASS / JS / HTML / CSS Transformando ideias em experiências incríveis e únicas.</p>
+          </li>
+          <li>
+            <div><img src="./images/svgs/backend.svg" alt="Backend svg"></div>
+            <p><span>Back-end</span> <br>Node / MongoDB / PostgreSQL Servidor com estrutura escalável e robusta para sua aplicação.</p>
+          </li>
+          <li>
+            <div><img src="./images/svgs/design.svg" alt="Design svg"></div>
+            <p><span>Design</span> <br>Elaboração de um design moderno e responsivo de acordo com a necessidade do cliente.</p>
+          </li>
+          <li>
+            <div><img src="./images/svgs/cloud.svg" alt="Cloud svg"></div>
+            <p><span>Hospedagem</span> <br>Hospedagens excelentes para garantir segurança, desempenho e confiabilidade da sua aplicação.</p>
+          </li>
+          <li>
+            <div><img src="./images/svgs/diamond.svg" alt="Diamond svg"></div>
+            <p><span>Otimização</span> <br>Sua aplicação otimizada para garantir experiências únicas para os usuários. </p>
+          </li>
         </ul>
-
-        <p>Sou formado em Biotecnologia pelo Instituto Federal do Espirito Santo! Durante o ano de 2022, desenvolvi minhas habilidades de lógica de programação e resolução de problemas estudando C++. Em agosto do mesmo ano, comecei meus estudos de HTML5 e CSS3, realizando um curso com carga horária de 160h (concluído em fevereiro de 2023). Após concluí-lo, iniciei um curso de Programação Full-Stack com foco em JavaScript que concluí em Agosto de 2023. Agora, resolvo problemas e demandas digitais com aquilo que sou completamente apaixonado em fazer: PROGRAMAR!</p> 
       </aside>
     </section>
 
     <section id="who-am">
-      <h2 id="who-am-title">Quem sou eu?</h2>
+      <h2 id="who-am-title">Inovação digital ao seu alcance</h2>
       <aside>
-        <div class="info" data-aos="fade-right" data-aos-duration="1500">
-          <h3>Mais sobre mim</h3>
-          <p>Tenho 18 anos, resido em Serra-ES. Gosto bastante de desafios e resolver problemas com a programação! Busco sempre praticar os conteúdos aprendidos, mas sem deixar a teoria de lado! Não vejo a programação simplesmente como um trabalho, eu realmente amo o desenvolvimento. Cada nova lição aprendida me capacita a continuar desenvolvendo com cada vez mais habilidade e eficiência!!</p>
-        </div>
-        <div class="info" data-aos="fade-right" data-aos-duration="1500">
-          <h3>Paixão pela programação</h3>
-          <p>Conheci a programação aos 17 anos enquanto estudava robótica no IFES (ensino médio). Ver cada linha de código surtindo um efeito era algo que fazia meus olhos brilharem, o software me chamava atenção de uma forma espetacular, apesar de também entender o hardware. Após isso, busquei roadmaps e por onde começar na programação, daí comecei com HTML5 e CSS3 que, apesar de não serem linguagens de programação, introduziram-me no desenvolvimento web.</p>
-        </div>
-        <div class="info" data-aos="fade-right" data-aos-duration="1500">
-          <h3>Soft Skills</h3>
+        <div class="info first-info" data-aos="fade-up" data-aos-duration="1500">
+          <h3>O que faço?</h3>
           <p> 
-            • Comunicação eficaz <br>
-            • Trabalho em equipe <br>
-            • Aprendizado contínuo <br>
-            • Resolução de problemas <br>
-            • Pensamento criativo <br>
-            • Gerenciamento de projetos
+            Por meio do desenvolvimento de software, <span>realizo projetos que ultrapassem as expectativas dos clientes.</span> Seu projeto será desenvolvido com imenso zelo e habilidade, de forma a garantir <span>segurança, eficiência e qualidade</span> para os usuários. Deseja aprimorar seu negócio local com uma plataforma de vendas? Perfeito, <span>seu comércio em outro nível!</span> Deseja um sistema para sua empresa com mais de 1000 funcionários? Fantástico, a gestão de sua empresa será única!
           </p>
         </div>
-        <div class="info" data-aos="fade-right" data-aos-duration="1500">
-          <h3>Serviços oferecidos</h3>
-          <p>Como dito anteriormente, desenvolvo aplicações web (SPA), API's, interfaces, sistemas, E-commerce's e sites. Na contratação do desenvolvimento, você pode escolher alguns serviços a mais, como: <br>
-            • UI e UX <br>
-            • Criação de Identidade de Marca <br>
-            • Edição de Vídeos e Imagens <br>
-            • Design de Redes Sociais
-          </p>
+        <div class="info-container">
+          <div class="info" data-aos="fade-right" data-aos-duration="1500">
+            <h3>Mais sobre mim</h3>
+            <p>Tenho 18 anos, resido em Serra-ES. Sou desenvolvedor Full-Stack e através da programação <span>soluciono suas demandas digitais!</span> Com a prática alinhada à teoria desenvolvi minhas habilidades como programador! Não vejo a programação simplesmente como um trabalho, eu realmente amo o desenvolvimento. Sou graduando em Ciência da Computação (UFES).</p>
+          </div>
+          <div class="info" data-aos="fade-right" data-aos-duration="1500">
+            <h3>Serviços oferecidos</h3>
+            <p>Como dito anteriormente, desenvolvo aplicações web (SPA), API's, interfaces, sistemas, E-commerce's e sites. Na contratação do desenvolvimento, você pode escolher alguns serviços a mais, como: <br>
+              • Criação de Identidade de Marca <br>
+              • Edição de Vídeos e Imagens <br>
+              • Design de Redes Sociais
+            </p>
+          </div>
+          <div class="info" data-aos="fade-right" data-aos-duration="1500">
+            <h3>Paixão pela programação</h3>
+            <p>Conheci a programação aos 17 anos no IFES, onde usávamos C++. Ver cada linha de código surtindo um efeito era algo que fazia meus olhos brilharem. Posteriormente, realizei <span>mais de 3 cursos e dediquei mais de 600h</span> para me aperfeiçoar como programador. Atualmente, forneço soluções digitais e resolução de problemas por meio de projetos <span>para meus clientes por todo o Brasil!</span></p>
+          </div>
         </div>
       </aside>
     </section>
 
     <section id="hard-skills">
-      <h2 id="hard-skills-title">Hard Skills</h2>
+      <h2 id="hard-skills-title">Tecnologias e certificados</h2>
       <aside id="hard-skills-cards">
-        <div class="hard-skills-card">
+        <div class="hard-skills-card" data-aos="flip-up" data-aos-duration="1000">
           <img src="images/hardskills/javascript-original.svg" alt="JavaScript">
           <p>JavaScript</p>
           <span>
             Linguagem de programação para desenvolvimento web interativo e dinâmico. <br>
-            • DOM • JS moderno • POO • NPM • JS Assíncrono 
           </span>
         </div>
-        <div class="hard-skills-card">
+        <div class="hard-skills-card" data-aos="flip-up" data-aos-duration="1000">
           <img src="images/hardskills/typescript-original.svg" alt="TypeScript">
           <p>TypeScript</p>
           <span>
             Superset tipado do JavaScript para desenvolvimento escalável e orientado a objetos. <br>
-            • Tuplas & Enums • Generics • Tipagem • interface • tsc
           </span>
         </div>
-        <div class="hard-skills-card">
+        <div class="hard-skills-card" data-aos="flip-up" data-aos-duration="1000">
           <img src="images/hardskills/html5-original.svg" alt="HTML5">
           <p>HTML5</p>
           <span>
-            Versão atualizada do HTML com recursos avançados e semânticos para construir websites. <br>
-            • Semantic tag's • Iframe • Tables • Links • Forms
+            Versão atualizada do HTML com recursos avançados e semânticos para aplicações. <br>
           </span>
         </div>
-        <div class="hard-skills-card">
+        <div class="hard-skills-card" data-aos="flip-up" data-aos-duration="1000">
           <img src="images/hardskills/css3-original.svg" alt="CSS3">
           <p>CSS3</p>
           <span>
             Versão atualizada do CSS para estilizar elementos da web.<br>
-            • Media Queries • Mobile First • Animations • Pseudoclasses • Cores & Fontes
           </span>
         </div>
-        <div class="hard-skills-card">
+        <div class="hard-skills-card" data-aos="flip-up" data-aos-duration="1000">
           <img src="images/hardskills/git-original.svg" alt="GIT">
           <p>GIT</p>
           <span>
             Sistema de controle de versão distribuído para gerenciar projetos de software.<br>
-            • Branchs • Merge • Pull • Clone • Hospedagem
           </span>
         </div>
-        <div class="hard-skills-card">
+        <div class="hard-skills-card" data-aos="flip-up" data-aos-duration="1000">
           <img src="images/hardskills/sass-original.svg" alt="SASS">
           <p>SASS</p>
           <span>
             Pré-processador CSS para facilitar o desenvolvimento e organização de estilos.<br>
-            • Nesting • Mixin • Função • .sass & .scss • Herança
           </span>
         </div>
-        <div class="hard-skills-card">
+        <div class="hard-skills-card" data-aos="flip-up" data-aos-duration="1000">
           <img src="images/hardskills/bootstrap-original.svg" alt="Bootstrap">
           <p>Bootstrap</p>
           <span>
             Framework front-end responsivo para agilizar o desenvolvimento de interfaces web.<br>
-            • Searchbar • Spinner • Buttons • Forms • Dropdown
           </span>
         </div>
-        <div class="hard-skills-card">
+        <div class="hard-skills-card" data-aos="flip-up" data-aos-duration="1000">
           <img src="images/hardskills/react-original.svg" alt="React">
           <p>React</p>
           <span>
             Biblioteca JavaScript para criação de interfaces de usuário interativas.<br>
-            • Componentização • Hooks • Imports & Estilos • Routes & SPA • Vite & Deploy
           </span>
         </div>
-        <div class="hard-skills-card">
+        <div class="hard-skills-card" data-aos="flip-up" data-aos-duration="1000">
+          <img src="images/hardskills/nextjs-original.svg" alt="Next">
+          <p>Next</p>
+          <span>
+            Framework React focado em Server-side Rendering.<br>
+          </span>
+        </div>
+        <div class="hard-skills-card" data-aos="flip-up" data-aos-duration="1000">
           <img src="images/hardskills/nodejs-original.svg" alt="Node.js">
           <p>Node.js</p>
           <span>
-            Ambiente de execução JavaScript para desenvolvimento de aplicações server-side.<br>
-            • Bibliotecas • HTTP • JSON • Integração • API
+            Software JavaScript para desenvolvimento de aplicações server-side.<br>
           </span>
         </div>
-        <div class="hard-skills-card">
+        <div class="hard-skills-card" data-aos="flip-up" data-aos-duration="1000">
           <img src="images/hardskills/express-original.svg" alt="Express.js">
           <p>Express.js</p>
           <span>
             Framework Node.js para construção de aplicativos web robustos e escaláveis.<br>
-            • Routes • Use & Set • EJS • CORS • TryCatch
           </span>
         </div>
-        <div class="hard-skills-card">
+        <div class="hard-skills-card" data-aos="flip-up" data-aos-duration="1000">
           <img src="images/hardskills/mongodb-original.svg" alt="Mongo DB">
           <p>Mongo DB</p>
           <span>
             Banco de dados NoSQL orientado a documentos para armazenamento de dados.<br>
-            • BSON • Schema • Collections • Atlas • Mongoose
           </span>
         </div>
-        <div class="hard-skills-card">
+        <div class="hard-skills-card" data-aos="flip-up" data-aos-duration="1000">
           <img src="images/hardskills/postgresql-original.svg" alt="PostgreSQL">
           <p>PostgreSQL</p>
           <span>
             Sistema de gerenciamento de banco de dados relacional de código aberto.<br>
-            • Migrates • Sequelize • Associações • SQL query • MVC
+          </span>
+        </div>
+        <div class="hard-skills-card" data-aos="flip-up" data-aos-duration="1000">
+          <img src="images/hardskills/sequelize-original.svg" alt="Sequelize">
+          <p>Sequelize</p>
+          <span>
+            ORM JavaScript para bancos de dados relacionais.<br>
+          </span>
+        </div>
+        <div class="hard-skills-card" data-aos="flip-up" data-aos-duration="1000">
+          <img src="images/hardskills/canva-original.svg" alt="Canva">
+          <p>Canva</p>
+          <span>
+            software para design e criação de marcas.<br>
+          </span>
+        </div>
+        <div class="hard-skills-card" data-aos="flip-up" data-aos-duration="1000">
+          <img src="images/hardskills/figma-original.svg" alt="Figma">
+          <p>Figma</p>
+          <span>
+            software para prototipação de interfaces.<br>
           </span>
         </div>
       </aside>
-      <aside id="hard-skills-certificates">
-        <h3>Cursos e Certificados</h3>
-        <p>Possuo certificados de todas as staks citadas acima, aqui estão alguns deles!</p>
-        <div>
-          <img src="images/certificates/certificado-jsv.png" alt="Certificado JavaScript V">
-          <img src="images/certificates/certificado-mongodb.png" alt="Certificado MongoDB">
-          <img src="images/certificates/certificado-html5.png" alt="Certificado HTML5">
-          <img src="images/certificates/certificado-udemy.png" alt="Certificado Udemy">
+      <aside id="hard-skills-certificates" class="swiper">
+        <div class="swiper-wrapper">
+          <img class="swiper-slide" src="images/certificates/certificado-jsv.png" alt="Certificado JavaScript V">
+          <img class="swiper-slide" src="images/certificates/certificado-postgreSQL.png" alt="Certificado PostgreSQL">
+          <img class="swiper-slide" src="images/certificates/certificado-html5.png" alt="Certificado HTML5">
+          <img class="swiper-slide" src="images/certificates/certificado-mongodb.png" alt="Certificado MongoDB">
+          <img class="swiper-slide" src="images/certificates/certificado-udemy.png" alt="Certificado Udemy">
+          <img class="swiper-slide" src="images/certificates/certificado-typescript.png" alt="Certificado Typescript">
         </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </aside>
     </section>
 
@@ -219,74 +258,84 @@
       <h2 id="projects-title">Projetos Principais</h2>
       <aside>
         <div class="project">
+          <h3>Futebol Quiz</h3>
+          <img src="images/projects/project4/projeto4-ft1.png" alt="Imagens projeto 1">
+          <p class="project-info">Projeto de games de futebol feito para um cliente que é influenciador na área esportiva! Possuindo um frontend, backend e admin para gerenciamento dos dados, o servidor foi construido visando velocidade e escalabilidade, suportando milhares de usuários simultaneamente. Projeto totalmente responsivo e com tema claro/escuro e com atualização automática! </p>
+          <a href="https://futebolquiz.com.br/" target="_blank" rel="external" class="acess project-button">Acessar&#x1F517;</a>
+        </div>
+        <div class="project">
+          <h3>Busca Buffet</h3>
+          <img src="images/projects/project6/projeto6-ft1.png" alt="Imagens projeto 1">
+          <p class="project-info">Projeto SaaS de abrangência nacional para intermediar a conexão entre buffet's e clientes! Com diversas páginas e API'S conectadas (como a do Google Maps), o sistema tem diversos planos para que os buffet's contratem e divulguem seus espaços! Além disso, conta com um dashboard completo que trás diversas informações para os usuários.</p>
+          <a href="https://buscabuffet.com.br/" target="_blank" rel="external" class="acess project-button">Acessar&#x1F517;</a>
+        </div>
+        <div class="project">
           <h3>Checklist</h3>
           <img src="images/projects/project1/projeto1-ft1.png" alt="Imagens projeto Checklist">
-          <p class="project-info">Projeto Full-Stack SPA feito com React e com hospedagem ativa no MongoDB Atlas! Nele coloquei em prática diversos aprendizados, como schema, rotas, componentização, entre outros. O projeto possui 4 páginas principais: login, usuário, novo usuário e termos de uso. O usuário pode: criar novas tarefas, editá-las, excluí-las e marca-las como concluídas! Esta aplicação utiliza dois tipos de criptografia para garantir a segurança e privacidade do usuário!</p>
-          <p class="project-staks">React • MongoDB • Mongoose • JavaScript • Node.js • Express.js • SASS </p>
+          <p class="project-info">
+            Projeto Full-Stack SPA que otimiza sua organização! Nessa aplicação temos uma checklist com 4 páginas muito bem estilizadas, onde o usuário possui uma interface agradável e pode gerenciar tranquilamente suas tarefas do dia a dia. E como a segurança é fundamental, as senhas dos usuários são criptografadas, assim como suas tarefas.
+          </p>
           <a href="https://checklist-fullstack.vercel.app/" target="_blank" rel="external" class="acess project-button">Acessar&#x1F517;</a>
           <a href="https://github.com/Arthur-Candeia/checklist-frontend" target="_blank" rel="external" class="repository project-button">Repositório&#x1F517;</a>
         </div>
         <div class="project">
           <h3>Loja Precisei</h3>
           <img src="images/projects/project2/projeto2-ft1.png" alt="Imagens projeto Loja Precisei">
-          <p class="project-info">E-commerce completo, com paleta de cores monocromática e fontes personalizadas. Possui diversas páginas e responsividade excepcional. Nesse projeto podemos selecionar tamanho, quantidade e cor do vestuário, ver suas características e avaliações, conhecer sua história e contatar o FAQ, adicionar ao carrinho e confirmar o pagamento. Cada página possui interações específicas em seus elementos, com excelente UX! Projeto não refatorado!</p>
-          <p class="project-staks">JavaScript • HTML5 • CSS3</p>
+          <p class="project-info">
+            E-commerce completo de uma t-shirt, com paleta de cores monocromática e fontes personalizadas. Possui diversas páginas e responsividade excepcional. Nesse projeto podemos selecionar tamanho, quantidade e cor do vestuário, ver suas características e avaliações, conhecer sua história e contatar o FAQ, adicionar ao carrinho e confirmar o pagamento.
+          </p>
           <a href="https://arthur-candeia.github.io/loja-precisei/" target="_blank" rel="external" class="acess project-button">Acessar&#x1F517;</a>
           <a href="https://github.com/Arthur-Candeia/loja-precisei" target="_blank" rel="external" class="repository project-button">Repositório&#x1F517;</a>
         </div>
         <div class="project">
           <h3>Space Bootstrap</h3>
           <img src="images/projects/project3/projeto3-ft1.png" alt="Imagens projeto Space Bootstrap">
-          <p class="project-info">Projeto do curso FullStack que realizei! Feito inteiramente com Bootstrap e SASS, esse projeto corresponde a um dos mais belos que já desenvolvi. Possui diversas animações e qualidades de imagem excelentes em todas as suas 3 páginas. Tudo isso além da aplicação de diversos conceitos/elementos do Bootstrap atrelados à responsividade. Nele foi possível evoluir bastante minhas habilidades para versões mobile de interfaces!</p>
-          <p class="project-staks">Bootstrap • SASS • HTML5</p>
+          <p class="project-info">Projeto do curso FullStack que realizei! Feito inteiramente com Bootstrap e SASS, esse projeto corresponde a um dos mais belos que já desenvolvi. Possui diversas animações e qualidades de imagem excelentes em todas as suas 3 páginas. Tudo isso além da aplicação de diversos conceitos/elementos do Bootstrap atrelados à responsividade!</p>
           <a href="https://arthur-candeia.github.io/space-bootstrap/" target="_blank" rel="external" class="acess project-button">Acessar&#x1F517;</a>
           <a href="https://github.com/Arthur-Candeia/space-bootstrap" target="_blank" rel="external" class="repository project-button">Repositório&#x1F517;</a>
-        </div>
-        <div class="project">
-          <h3>Buscador de Imagens</h3>
-          <img src="images/projects/project4/projeto4-ft1.png" alt="Imagens projeto 1">
-          <p class="project-info">Projeto feito para facilitar o encontro de imagens gratuitas! Esse projeto consome a API do Unsplash que contém mais de 1.000.000 de imagens. As fotos são exibidas com base em um campo de texto e a escolha entre retrato e paisagem pelo usuário. Além disso, cada uma das imagens pode ser baixada de forma prática e rápida! Gostei bastante de desenvolver o projeto, pude trabalhar com múltiplas staks simultaneamente, além de usar Hooks e renderização condicional!</p>
-          <p class="project-staks">React • JavaScript • SASS • Bootstrap</p>
-          <a href="https://buscador-imagens-mocha.vercel.app/" target="_blank" rel="external" class="acess project-button">Acessar&#x1F517;</a>
-          <a href="https://github.com/Arthur-Candeia/buscador-imagens" target="_blank" rel="external" class="repository project-button">Repositório&#x1F517;</a>
         </div>
         <div class="project">
           <h3>Gestor de Estoque</h3>
           <img src="images/projects/project5/projeto5-ft1.png" alt="Imagens projeto 1">
           <p class="project-info">Projeto SPA feito com React (TypeScript)! O projeto possui 4 páginas principais: dashboard, stock, item e novo item. O usuário pode: criar novos itens, listá-los, editá-los e excluí-los! Nele é possível gerenciar seus produtos, visualizar os produtos recentes e os que estão acabando, fornecendo ao usuário um CRUD rápido e prático para gestão de estoques!</p>
-          <p class="project-staks">React • TypeScript • SASS</p>
           <a href="https://gestor-estoque.vercel.app/" target="_blank" rel="external" class="acess project-button">Acessar&#x1F517;</a>
           <a href="https://github.com/Arthur-Candeia/gestor-estoque" target="_blank" rel="external" class="repository project-button">Repositório&#x1F517;</a>
-        </div>
-        <div class="project">
-          <h3>Calculadora JS</h3>
-          <img src="images/projects/project6/projeto6-ft1.png" alt="Imagens projeto 1">
-          <p class="project-info">Projeto feito para fixar conteúdos do DOM (Document Object Model)! A calculadora possui funções como: troca de temas (light/dark), cópia de resultados para área de transferência e display error em caso de contas inválidas! Além de clicar nos botões da calculadora, o usuário pode usar o próprio teclado para digitar, porém há uma verificação para permitir a entrada apenas de números e símbolos válidos.</p>
-          <p class="project-staks">JavaScript • HTML5 • CSS3</p>
-          <a href="https://arthur-candeia.github.io/calculadora-js/" target="_blank" rel="external" class="acess project-button">Acessar&#x1F517;</a>
-          <a href="https://github.com/Arthur-Candeia/calculadora-js" target="_blank" rel="external" class="repository project-button">Repositório&#x1F517;</a>
         </div>
       </aside>
     </section>
 
     <section id="contact">
-      <h2 id="contact-title">Contate-me</h2>
+      <h2 id="contact-title">Faça já seu orçamento grátis!</h2>
       <form autocomplete="on" method="POST">
         <input type="text" name="inputName" id="inputName" placeholder="Qual o seu nome?" required minlength="4">
         <input type="email" name="email" id="email" placeholder="email@example.com" required minlength="8">
         <textarea name="message" id="message" cols="30" rows="7" placeholder="Digite aqui sua mensagem!" required minlength="4"></textarea>
         <input type="submit" value="ENVIAR">
       </form>
+      <footer>
+        <p>Desenvolvido por Arthur Candeia<br>Todos os direitos de criação reservados © 2023</p>
+      </footer>
     </section>
   </main>
-
-  <footer>
-    <p>Desenvolvido por Arthur Candeia<br>Todos os direitos de criação reservados © 2023</p>
-  </footer>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script> <!--Animation-->
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+  
+    const swiper = new Swiper('.swiper', {
+      direction: 'horizontal',
+      loop: true,
+      pagination: {
+      el: '.swiper-pagination',
+      },
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      }
+    })
+  </script>
 </body>
 </html>

@@ -62,3 +62,15 @@ form.addEventListener('submit', (ev) => {
 
 switchThemeBtn.addEventListener('click', switchThemeFunction)
 viewScroll()
+
+let position = -40
+let direction = true
+setInterval(() => {
+  document.querySelector('#name span').style.backgroundImage = `linear-gradient(to right, #3DCC74 ${position}%, #04554D)`
+  if (direction) {
+    position < 140 ? position++ : direction = false
+  }
+  else {
+    position > -50 ? position-- : direction = true
+  }
+}, 30)

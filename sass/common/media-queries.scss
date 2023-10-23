@@ -11,7 +11,7 @@
     @include font-style(12px, 'Open Sans', white);
     padding: 10px;
     span {
-      @include font-style(16px, 'Open Sans', $green3);
+      @include font-style(25px, 'Open Sans', $green3);
     }
   }
 
@@ -21,6 +21,15 @@
         text-align: left;
         padding: 0px;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  #name {
+    @include font-style(25px, 'Open Sans', white);
+    span {
+      @include font-style(45px, 'Open Sans', $green3);
     }
   }
 }
@@ -39,29 +48,74 @@
     background-color: #111;
   }
 
+  main {
+    #wpp {
+      bottom: 20px;
+      right: 25px;
+  
+      img {
+        width: 80px;
+      }
+    }
+  }
+
+  .flex-presentation {
+    flex-direction: row;
+  }
+
+  .circle {
+    width: 260px;
+    height: 260px;
+  }
+
+  #presentation-info {
+    .presentation-buttons {
+      align-self: flex-start;
+    }
+
+    h3 {
+      align-self: flex-start;
+      transform: translateY(55px);
+    }
+  }
+
   #name {
-    @include font-style(26px, 'Open Sans', white);
+    @include font-style(20px, 'Open Sans', white);
 
     span {
-      @include font-style(50px, 'Open Sans', $green3);
+      @include font-style(40px, 'Open Sans', $green3);
     }
   }
 
   #presentation-content {
     align-self: start;
     padding: 15px 25px;
+    margin-top: 30px;
+
+    ul li {
+      text-align: justify;
+    }
   }
 
   #who-am {
     aside {
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
       gap: 10px;
+
+      .info-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
 
     .info {
-      width: 47vw;
+      width: 30vw;
+      min-width: 400px;
       margin-right: 7.5px;
       margin-left: 7.5px;
   
@@ -73,29 +127,46 @@
         font-size: 15px;
       }
     }
+
+    .first-info {
+      width: 50%;
+      margin: 20px 0px 60px;
+      border-radius: 2px;
+      box-shadow: 15px 15px 0px 5px #3DCC7499;
+
+      h3 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
   }
 
   #hard-skills-cards {
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    width: 50%;
+    min-width: 600px;
 
     .hard-skills-card {
       span {
-        @include font-style(0.8vw, 'Open Sans', white);
+        @include font-style(0.7rem, 'Open Sans', white);
       }
     }
   }
 
   #hard-skills-certificates {
-    div {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+    width: 50%;
+    height: 470px;
+    margin-bottom: 20px;
+    z-index: 0;
 
     img {
-      width: 40vw;
-      margin: 20px;
+      object-fit: contain;
+      width: 60%;
+      height: 420px;
     }
   }
 
@@ -109,14 +180,69 @@
   }
 
   .project {
-    width: 42vw;
+    width: 35vw;
 
     img {
-      height: 21vw;
+      height: 17vw;
     }
   }
 
   form {
-    width: 50vw;
+    width: 45vw;
+  }
+
+  @keyframes moveImg {
+    0% {
+      transform: translateY(0px);
+    }
+    25% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    75% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  .flex-presentation {
+    gap: 18%;
+  }
+
+  .circle {
+    width: 360px;
+    height: 360px;
+  }
+
+  #name {
+    @include font-style(20px, 'Open Sans', white);
+
+    span {
+      @include font-style(60px, 'Open Sans', $green3);
+    }
+  }
+
+  #presentation-info {
+    h3 {
+      transform: translateY(70px);
+    }
+  }
+
+  #hard-skills-cards {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    width: 80%;
+
+    .hard-skills-card {
+      span {
+        @include font-style(0.6rem, 'Open Sans', white);
+      }
+    }
   }
 }
