@@ -8,8 +8,11 @@ export function switchThemeFunction() {
     document.querySelector('body').style.backgroundColor = '#eeeeeec9'
 
     document.querySelector('#presentation').style.background = "black url('../images/backgrounds/background1light.jpg') center center no-repeat fixed"
+    document.querySelector('#presentation').style.backgroundSize = "cover"
     document.querySelector('#hard-skills').style.background = "black url('../images/backgrounds/background1light.jpg') center center no-repeat fixed"
+    document.querySelector('#hard-skills').style.backgroundSize = "cover"
     document.querySelector('#contact').style.background = "black url('../images/backgrounds/background1light.jpg') center center no-repeat fixed"
+    document.querySelector('#contact').style.backgroundSize = "cover"
     document.querySelector('#name').style.color = '#000'
     document.querySelectorAll('#presentation-info > .presentation-buttons > .link-social > svg').forEach((element) => element.parentElement.classList.add('link-social-white-theme'))
 
