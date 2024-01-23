@@ -16,6 +16,9 @@
   }
 
   #hard-skills-cards {
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+
     .hard-skills-card {
       span {
         text-align: left;
@@ -145,9 +148,9 @@
   }
 
   #hard-skills-cards {
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(4, 1fr);
-    width: 50%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
     min-width: 600px;
 
     .hard-skills-card {
@@ -236,8 +239,8 @@
 
   #hard-skills-cards {
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(8, 1fr);
-    width: 80%;
+    grid-template-columns: repeat(9, 1fr);
+    width: 90%;
 
     .hard-skills-card {
       span {
