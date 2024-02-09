@@ -28,6 +28,20 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  #hard-skills-cards > .hard-skills-card  {
+
+    p {
+      @include font-style-p(0.9em, 'Open Sans');
+    }
+
+    span {
+      @include font-style(0.55em, 'Open Sans', white);
+    }
+    
+  }
+}
+
 @media screen and (min-width: 550px) {
   #name {
     @include font-style(25px, 'Open Sans', white);
@@ -46,7 +60,7 @@
   }
 }
 
-@media screen and (min-width: 800px) { //versao desktop
+@media screen and (min-width: 800px) {
   body {
     background-color: #111;
   }
@@ -149,13 +163,17 @@
 
   #hard-skills-cards {
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     width: 100%;
     min-width: 600px;
 
     .hard-skills-card {
+      p {
+        @include font-style-p(0.8em, 'Open Sans');
+      }
+
       span {
-        @include font-style(0.7rem, 'Open Sans', white);
+        @include font-style(0.5rem, 'Open Sans', white);
       }
     }
   }
@@ -238,13 +256,13 @@
   }
 
   #hard-skills-cards {
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     width: 90%;
 
     .hard-skills-card {
       span {
-        @include font-style(0.6rem, 'Open Sans', white);
+        @include font-style(0.9rem, 'Open Sans', white);
       }
     }
   }
