@@ -44,6 +44,35 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
+body#light-theme {
+  background-color: rgba(238, 238, 238, 0.7882352941) !important;
+}
+body#light-theme #switchThemeBtn {
+  color: black !important;
+  border-color: black !important;
+}
+body#light-theme #presentation, body#light-theme #hard-skills, body#light-theme #contact {
+  background: black url("../images/backgrounds/background1light.jpg") center center no-repeat fixed !important;
+  background-size: cover !important;
+}
+body#light-theme #name {
+  color: black !important;
+}
+body#light-theme #presentation-info > .presentation-buttons > .link-social > svg {
+  fill: black;
+}
+body#light-theme p, body#light-theme li, body#light-theme a:not(.bi), body#light-theme #hard-skills-cards > .hard-skills-card > span {
+  color: black !important;
+}
+body#light-theme #projects > aside > .project > .project-button {
+  border-color: black !important;
+}
+body#light-theme .repository:hover {
+  color: white !important;
+  background-color: black !important;
+  transition: all 0.2s ease !important;
+}
+
 main {
   position: relative;
   visibility: hidden;
@@ -87,6 +116,10 @@ main #navbar a {
   background-color: transparent;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.329);
   border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+main #navbar a:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
 }
 
 #switchThemeBtn {
@@ -133,6 +166,7 @@ p, li, a {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: auto;
   overflow: hidden;
   background: black url("../images/backgrounds/background1dark.jpg") center center no-repeat fixed;
   background-size: cover;
@@ -219,11 +253,11 @@ p, li, a {
   color: transparent;
 }
 #presentation-info .presentation-buttons .linkedin svg:hover {
-  fill: #0097BD;
+  fill: #0097BD !important;
   transition: all 0.2s ease-in-out;
 }
 #presentation-info .presentation-buttons .github svg:hover {
-  fill: #3DCC74;
+  fill: #3DCC74 !important;
   transition: all 0.2s ease-out;
 }
 #presentation-info h3 {
@@ -310,10 +344,6 @@ p, li, a {
   fill: white;
 }
 
-.link-social-white-theme svg {
-  fill: black;
-}
-
 @keyframes moveImg {
   0% {
     transform: translateY(0px);
@@ -378,6 +408,7 @@ p, li, a {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: auto;
   overflow: hidden;
   background: black url("../images/backgrounds/background1dark.jpg") center center no-repeat fixed;
   background-size: cover;
@@ -522,6 +553,7 @@ p, li, a {
   display: inline-block;
   margin-right: 10px;
   cursor: pointer;
+  text-decoration: none;
   padding: 8px 10px;
   border: 1px solid white;
   border-radius: 3px;
@@ -539,24 +571,13 @@ p, li, a {
   transition: all 0.2s ease;
 }
 
-#repository-dark:hover {
-  color: black;
-  background-color: white;
-  transition: all 0.2s ease;
-}
-
-#repository-light:hover {
-  color: white;
-  background-color: black;
-  transition: all 0.2s ease;
-}
-
 #contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: auto;
   overflow: hidden;
   background: black url("../images/backgrounds/background1dark.jpg") center center no-repeat fixed;
   background-size: cover;

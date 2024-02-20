@@ -48,6 +48,44 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
+body#light-theme {
+  background-color: #eeeeeec9 !important;
+
+  #switchThemeBtn {
+    color: black !important;
+    border-color: black !important;
+  }
+
+  #presentation, #hard-skills, #contact {
+    background: black url('../images/backgrounds/background1light.jpg') center center no-repeat fixed !important;
+    background-size: cover !important;
+  }
+
+  #name {
+    color: black !important;
+  }
+
+  #presentation-info > .presentation-buttons > .link-social > svg {
+    fill: black;
+  }
+
+  p, li, a:not(.bi), #hard-skills-cards > .hard-skills-card > span {
+    color: black !important;
+  }
+
+  #projects > aside > .project > .project-button {
+    border-color: black !important;
+  }
+
+  .repository {
+    &:hover {
+      color: white !important;
+      background-color: black !important;
+      transition: all 0.2s ease !important;
+    }
+  }
+}
+
 main {
   position: relative;
   visibility: hidden;
@@ -91,6 +129,11 @@ main {
       background-color: transparent;
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.329);
       border-radius: 50%;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
+      }
     }
   }
 }

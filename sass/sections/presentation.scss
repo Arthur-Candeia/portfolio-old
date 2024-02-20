@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: auto;
   overflow: hidden;
   background: black url('../images/backgrounds/background1dark.jpg') center center no-repeat fixed;
   background-size: cover;
@@ -87,14 +88,14 @@
   
     .linkedin svg {
       &:hover {
-        fill: #0097BD;
+        fill: #0097BD !important;
         transition: all 0.2s ease-in-out;
       }
     }
     
     .github svg {
       &:hover {
-        fill: $green3;
+        fill: $green3 !important;
         transition: all 0.2s ease-out;
       }
     }
@@ -187,10 +188,6 @@
   width: 50px;
   height: 50px;
   fill: white;
-}
-
-.link-social-white-theme svg {
-  fill: black;
 }
 
 @keyframes moveImg {
