@@ -2,7 +2,7 @@
 Esse é o meu portfólio! Feito com HTML5, CSS3 e JS! O portfólio possui links importantes, sobre mim, hard-skills, projetos, contatos, entre outras funcionalidades! A paleta de cores escolhida foi tons de verdes vivos!
 
 <p align="center">
-<img src="https://github.com/Arthur-Candeia/portfolio/blob/master/images/imgToReadme.png" >
+<img src="https://github.com/Arthur-Candeia/portfolio-old/blob/master/images/imgToReadme.png" >
 </p>
 
 ### O que está presente na aplicação?
