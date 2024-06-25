@@ -1,4 +1,5 @@
-# Portfólio
+# Portfólio Antigo
+<p>⚠️ Atenção: Esse portfólio está <b>desatualizado</b>. Visite o novo <a href="https://arthur-candeia.com.br/">aqui.</a></p>
 Esse é o meu portfólio! Feito com HTML5, CSS3 e JS! O portfólio possui links importantes, sobre mim, hard-skills, projetos, contatos, entre outras funcionalidades! A paleta de cores escolhida foi tons de verdes vivos!
 
 <p align="center">
